@@ -14,7 +14,7 @@ data "aws_ami" "app_ami" {
   owners = ["979382823631"] # Bitnami
 }
 
-module "dev" {
+module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
   name = "my-vpc"
